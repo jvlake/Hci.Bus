@@ -38,7 +38,7 @@ namespace Hci.Bus
         private readonly ConcurrentQueue<Guid> _unsubscribeRequests = new ConcurrentQueue<Guid>();
         private readonly ActionBlock<Publish> _messageProcessor;
 
-        public static Lazy<HciBus> Instance = new Lazy<HciBus>(() => new HciBus());
+        public static Lazy<HciBusInstance> Instance = new Lazy<HciBusInstance>(() => new HciBusInstance());
 
         private HciBusInstance()
         {
