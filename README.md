@@ -4,7 +4,7 @@ Hci.Bus is a simple pub/sub system that works 'in process'.
 
 Installation:
 ```
-Install-Package Hci.Bus -Version 1.0.1
+Install-Package Hci.Bus -Version 1.0.3
 ```
 
 usage:
