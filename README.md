@@ -13,7 +13,7 @@ public class Foo{
     public string Text { get; set; }
 }
 
-IHciBus bus = HciBus.Instance.Value;
+IHciBus bus = new HciBus();
 bus.Subscribe<Foo>(p => Console.Write($"Result was {p.Text}"));
 bus.Publish(new Foo { Text = "Bar" });
 ```
